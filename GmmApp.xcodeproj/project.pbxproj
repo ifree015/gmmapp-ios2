@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		15E989F7F6D2555D04863331 /* Pods_GmmApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E4F22F50EAA16FA04D957C /* Pods_GmmApp.framework */; };
+		8C454E8529D6AAFC00CD8FE4 /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C454E8229D6AAFC00CD8FE4 /* LogUtils.swift */; };
+		8C454E8629D6AAFC00CD8FE4 /* JavascriptBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C454E8429D6AAFC00CD8FE4 /* JavascriptBridge.swift */; };
 		8C9B447C29C983CF00F0D753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B447B29C983CF00F0D753 /* AppDelegate.swift */; };
 		8C9B447E29C983CF00F0D753 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B447D29C983CF00F0D753 /* SceneDelegate.swift */; };
 		8C9B448029C983CF00F0D753 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B447F29C983CF00F0D753 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		5826CF60D23CAEC512AB31B0 /* Pods-GmmApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GmmApp.debug.xcconfig"; path = "Target Support Files/Pods-GmmApp/Pods-GmmApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8C454E8229D6AAFC00CD8FE4 /* LogUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
+		8C454E8429D6AAFC00CD8FE4 /* JavascriptBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JavascriptBridge.swift; sourceTree = "<group>"; };
 		8C9B447829C983CF00F0D753 /* GmmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GmmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9B447B29C983CF00F0D753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C9B447D29C983CF00F0D753 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8C454E8129D6AAFC00CD8FE4 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				8C454E8229D6AAFC00CD8FE4 /* LogUtils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		8C454E8329D6AAFC00CD8FE4 /* webview */ = {
+			isa = PBXGroup;
+			children = (
+				8C454E8429D6AAFC00CD8FE4 /* JavascriptBridge.swift */,
+			);
+			path = webview;
+			sourceTree = "<group>";
+		};
 		8C9B446F29C983CF00F0D753 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +97,8 @@
 		8C9B447A29C983CF00F0D753 /* GmmApp */ = {
 			isa = PBXGroup;
 			children = (
+				8C454E8329D6AAFC00CD8FE4 /* webview */,
+				8C454E8129D6AAFC00CD8FE4 /* utils */,
 				8C9B449129C988E500F0D753 /* common */,
 				8C9B447B29C983CF00F0D753 /* AppDelegate.swift */,
 				8C9B447D29C983CF00F0D753 /* SceneDelegate.swift */,
@@ -106,7 +128,6 @@
 				5826CF60D23CAEC512AB31B0 /* Pods-GmmApp.debug.xcconfig */,
 				A330CECC172169A83EB278FD /* Pods-GmmApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -225,8 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C454E8529D6AAFC00CD8FE4 /* LogUtils.swift in Sources */,
 				8C9B448029C983CF00F0D753 /* ViewController.swift in Sources */,
 				8C9B449529C98AAC00F0D753 /* DeviceInformation.swift in Sources */,
+				8C454E8629D6AAFC00CD8FE4 /* JavascriptBridge.swift in Sources */,
 				8C9B449329C9897300F0D753 /* AppEnvironment.swift in Sources */,
 				8C9B447C29C983CF00F0D753 /* AppDelegate.swift in Sources */,
 				8C9B447E29C983CF00F0D753 /* SceneDelegate.swift in Sources */,
